@@ -38,6 +38,6 @@ class TransactionDetail(generics.RetrieveUpdateDestroyAPIView):
     serializer_class = TransactionSerializer
 
 
-class BalanceList(generics.ListCreateAPIView):
+class BalanceList(generics.ListAPIView):
     queryset = Balance.objects.all()
     serializer_class = BalanceSerializer
